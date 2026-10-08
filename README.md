@@ -1,5 +1,7 @@
 # agent-skills
 
+[![CI](https://github.com/abhishekash/agent-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/abhishekash/agent-skills/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 A collection of Agent Skills (`SKILL.md`) for building and operating agentic systems — authored against the pattern that made [obra/superpowers](https://github.com/obra/superpowers) and [anthropics/skills](https://github.com/anthropics/skills) effective: **concrete workflows, opinionated tables, and honest "works / fails when" notes.**
 
 A skill is a prompt-shaped artifact: the model sees the `name` + `description` in its context (progressive disclosure) and loads the body only when relevant. Descriptions are therefore written as routing triggers ("Use when…"), not marketing copy.
