@@ -18,12 +18,12 @@ the flight recorder; use them before touching prompts or code.
 ## Prerequisites
 
 - Traces as JSONL span files (agent-harness format: one OTel span per line)
-- `mcp-trace` mounted, or `harness trace render <file>` as fallback
+- `mcp-trace-inspector` mounted, or `harness trace render <file>` as fallback
 
 ## Workflow
 
 1. **Orient with `list_runs`** — find the run by task text, duration, or cost.
-   Full 32-char trace ids are error-prone; every mcp-trace tool accepts prefixes.
+   Full 32-char trace ids are error-prone; every mcp-trace-inspector tool accepts prefixes.
 2. **`run_summary` before `span_tree`** — the summary tells you the *shape*
    (llm calls, tool calls, denials, stopped_reason). Only open the tree if the
    shape looks wrong.
