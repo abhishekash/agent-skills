@@ -45,7 +45,7 @@ descriptions, outputs, errors — is a prompt. Write them like prompts.
 
 - Unit-test the core as pure functions (no MCP imports)
 - Integration-test the server over real stdio JSON-RPC with a tiny client
-- Keep a golden fixture of real input data in the repo (mcp-trace-inspector ships a real
+- Keep a golden fixture of real input data in the repo (SpanHound ships a real
   harness trace) — hand-written fixtures drift from reality
 
 ## Failure notes

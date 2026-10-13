@@ -10,14 +10,14 @@ A skill is a prompt-shaped artifact: the model sees the `name` + `description` i
 
 | Skill | Use when |
 |---|---|
-| [agent-trace-debugging](skills/agent-trace-debugging/SKILL.md) | A run was slow/expensive/loopy; "why did the agent do that?" — diagnose from OTel traces (via [mcp-trace-inspector](https://github.com/abhishekash/mcp-trace-inspector)) instead of re-running |
+| [agent-trace-debugging](skills/agent-trace-debugging/SKILL.md) | A run was slow/expensive/loopy; "why did the agent do that?" — diagnose from OTel traces (via [SpanHound](https://github.com/abhishekash/spanhound)) instead of re-running |
 | [hitl-policy-design](skills/hitl-policy-design/SKILL.md) | Wiring approval gates: risk tiers, approval-request UX, avoiding approval fatigue |
 | [mcp-server-authoring](skills/mcp-server-authoring/SKILL.md) | Building/reviewing an MCP server: descriptions-as-prompts, output budgets, ship checklist |
 | [eval-driven-agent-dev](skills/eval-driven-agent-dev/SKILL.md) | Changing prompts/tools/models: tasks + scorers before edits, deterministic-first |
 
 ## Example engineering workflow
 
-For a tool-using assistant that can write files, use [hitl-policy-design](skills/hitl-policy-design/SKILL.md) to define which actions need approval. Run the workflow through [agent-harness](https://github.com/abhishekash/agent-harness), inspect its trace with [mcp-trace-inspector](https://github.com/abhishekash/mcp-trace-inspector), then encode the failure as a repeatable check in [agent-evals](https://github.com/abhishekash/agent-evals). The skills explain the decisions; the linked repositories contain the runnable mechanisms and evidence.
+For a tool-using assistant that can write files, use [hitl-policy-design](skills/hitl-policy-design/SKILL.md) to define which actions need approval. Run the workflow through [agent-harness](https://github.com/abhishekash/agent-harness), inspect its trace with [SpanHound](https://github.com/abhishekash/spanhound), then encode the failure as a repeatable check in [agent-evals](https://github.com/abhishekash/agent-evals). The skills explain the decisions; the linked repositories contain the runnable mechanisms and evidence.
 
 ## Using them
 
